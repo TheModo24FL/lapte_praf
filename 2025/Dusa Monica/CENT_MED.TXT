@@ -1,0 +1,34 @@
+
+
+      FORMULAR CENTRALIZATOR AL COPIILOR CERE BENEFICIAZA 
+      DE ACORDAREA DE LAPTE PRAF PENTRU LUNA  6 ANUL 2025
+
+ Cabinet medical:CMI DR. DUSA MONICA MF                  
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:DUSA MONICA                   
+
+  Criteriul: b
+--------------------------------------------------------------
+  Nr.     Nume prenume copil                CNP     Cantitate
+--------------------------------------------------------------
+  Grupa de varsta:  0-1 luna 
+     1  Petrache Catalin Constantin     6250411701378   2400
+                                        --------------------
+                                        Total           2400
+  Grupa de varsta:  2-3 luni 
+     1  Afrasinei Iancu PAul            5250223700669   1800
+     2  Gradinaru Eduard George         5250401700741   2400
+     3  Kaddar Adam Yassin              5250313701060   2400
+     4  Miturca Melissa Ioana           6250401700776   2400
+                                        --------------------
+                                        Total           9000
+  Grupa de varsta: 10-12 luni
+     1  Nita Sofia Maria                6240731226700   1200
+                                        --------------------
+                                        Total           1200
+
+                              Total criteriu: b        12600
+
+   Semnatura si parafa medicului
+

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Browser and Email Sender</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .folder { 
+            border-left: 3px solid #0d6efd;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .folder-name {
+            color: #0d6efd;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .file-item {
+            padding: 5px 0;
+        }
+        .folder-toggle {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .folder-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+        .folder-content {
+            margin-left: 20px;
+        }
+    </style>
+    <script src="https://cdn.tiny.cloud/1/pif0ufkf0j5yb9nooilht37dna97vcpp6a8x6uv8lem9b0o9/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body class="bg-light">
+    {% include 'navbar.html' %}
+    
+    <div class="container py-4">
+        <form action="/send_email" method="post" id="emailForm" onsubmit="return validateForm()">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0 d-flex justify-content-between align-items-center">
+                                <div><i class="bi bi-folder"></i> Select Files</div>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox" id="selectAllFiles" onchange="toggleAllFiles(this)">
+                                    <label class="form-check-label text-white" for="selectAllFiles">Select All</label>
+                                </div>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            {% if 'root' in folders %}
+                            <div class="folder">
+                                <div class="folder-name">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <i class="bi bi-chevron-down folder-toggle" data-bs-toggle="collapse" data-bs-target="#root-folder"></i>
+                                            <i class="bi bi-folder2-open"></i> Root Directory
+                                        </div>
+                                        <div class="form-check mb-0">
+                                            <input class="form-check-input folder-select" type="checkbox" id="selectRoot" onchange="toggleFolder(this, 'root-folder')">
+                                            <label class="form-check-label" for="selectRoot">Select All</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse show folder-content" id="root-folder">
+                                    {% for file in folders['root'] %}
+                                    <div class="file-item">
+                                        <div class="form-check d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <input class="form-check-input" type="checkbox" name="files" value="{{ file.name }}" id="{{ file.name }}">
+                                                <label class="form-check-label" for="{{ file.name }}">
+                                                    <i class="bi bi-file-text"></i> {{ file.name }}
+                                                </label>
+                                                {% if file.name.lower().endswith('.txt') or file.name.lower().endswith('.dbf') %}
+                                                    <button type="button" class="btn btn-sm btn-link p-0 ms-2" onclick="previewFile('{{ file.name }}')">
+                                                        <i class="bi bi-eye"></i>
+                                                    </button>
+                                                {% endif %}
+                                            </div>
+                                            <div>
+                                                <small class="text-muted me-2">{{ file.size }}</small>
+                                                <small class="text-muted">{{ file.modified }}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                            {% for folder, files in folders.items() %}
+                                {% if folder != 'root' %}
+                                <div class="folder">
+                                    <div class="folder-name">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="bi bi-chevron-down folder-toggle" data-bs-toggle="collapse" data-bs-target="#folder-{{ loop.index }}"></i>
+                                                <i class="bi bi-folder2-open"></i> {{ folder }}
+                                            </div>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input folder-select" type="checkbox" id="select{{ folder }}" onchange="toggleFolder(this, 'folder-{{ loop.index }}')">
+                                                <label class="form-check-label" for="select{{ folder }}">Select All</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse show folder-content" id="folder-{{ loop.index }}">
+                                        {% for file in files %}
+                                        <div class="file-item">
+                                            <div class="form-check d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox" name="files" value="{{ folder }}/{{ file.name }}" id="{{ folder }}/{{ file.name }}">
+                                                    <label class="form-check-label" for="{{ folder }}/{{ file.name }}">
+                                                        <i class="bi bi-file-text"></i> {{ file.name }}
+                                                    </label>
+                                                    {% if file.name.lower().endswith('.txt') or file.name.lower().endswith('.dbf') %}
+                                                        <button type="button" class="btn btn-sm btn-link p-0 ms-2" onclick="previewFile('{{ folder }}/{{ file.name }}')">
+                                                            <i class="bi bi-eye"></i>
+                                                        </button>
+                                                    {% endif %}
+                                                </div>
+                                                <div>
+                                                    <small class="text-muted me-2">{{ file.size }}</small>
+                                                    <small class="text-muted">{{ file.modified }}</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0"><i class="bi bi-envelope"></i> Email Details</h5>
+                        </div>
+                        <div class="card-body">
+                            <select class="form-select mb-3" id="template-select" name="template_index" onchange="loadTemplate()">
+                                <option value="">Select template...</option>
+                                {% for template in templates %}
+                                <option value="{{ loop.index0 }}" {% if loop.index0 == last_template %}selected{% endif %}>
+                                    {{ template.name or (template.recipient + ' - ' + template.subject) }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                            
+                            <div class="mb-3">
+                                <label for="recipient" class="form-label">Recipient Email</label>
+                                <input type="email" class="form-control" name="recipient" id="recipient" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject" value="{{ default_subject }}" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" name="message" id="message" rows="10"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" name="save_template" id="save_template" onchange="toggleTemplateName()">
+                                <label class="form-check-label" for="save_template">Save as template</label>
+                            </div>
+                            <div class="mb-3 template-name-field" style="display: none;">
+                                <label for="template_name" class="form-label">Template Name</label>
+                                <input type="text" class="form-control" name="template_name" id="template_name">
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-send"></i> Send Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Add this after the form -->
+    <div class="modal fade" id="errorModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger"><i class="bi bi-exclamation-triangle"></i> Error</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="h5 mb-4">Please select at least one file to attach before sending the email.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File Preview Modal -->
+    <div class="modal fade" id="previewModal" tabindex="-1">
+        <div class="modal-dialog modal-xl" style="max-width: 95vw;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">File Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="textContent" style="display: none;">
+                        <pre class="bg-light p-3" style="max-height: 75vh; overflow-y: auto;"></pre>
+                    </div>
+                    <div id="dbfContent" style="display: none;">
+                        <div class="table-responsive" style="max-height: 75vh;">
+                            <!-- DBF table will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add success/error message modal -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            <div class="modal fade" id="messageModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title {% if category == 'error' %}text-danger{% else %}text-success{% endif %}">
+                                <i class="bi {% if category == 'error' %}bi-exclamation-triangle{% else %}bi-check-circle{% endif %}"></i>
+                                {{ 'Error' if category == 'error' else 'Success' }}
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            {{ message }}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <!-- Add these modals before the closing body tag -->
+    <div class="modal fade" id="vncModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Server VNC</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe src="https://lapte.modo24.ro/vnc.html" style="width:100%; height:100%; border:none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="filesModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Browser Fișiere</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe src="https://files.modo24.ro/files/" style="width:100%; height:100%; border:none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add these functions at the beginning of your script section
+        const vncModal = new bootstrap.Modal(document.getElementById('vncModal'));
+        const filesModal = new bootstrap.Modal(document.getElementById('filesModal'));
+
+        function showVNC() {
+            vncModal.show();
+        }
+
+        function showFiles() {
+            filesModal.show();
+        }
+
+        // Initialize TinyMCE with a callback for when it's ready
+        tinymce.init({
+            selector: '#message',
+            plugins: 'lists link image table code',
+            toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright | bullist numlist outdent indent | link image | code',
+            height: 300,
+            setup: function(editor) {
+                editor.on('change', function() {
+                    editor.save();
+                });
+            },
+            init_instance_callback: function(editor) {
+                // Load template only after TinyMCE is ready
+                loadTemplate();
+            }
+        });
+
+        const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+        const previewModal = new bootstrap.Modal(document.getElementById('previewModal'));
+
+        function validateForm() {
+            const checkboxes = document.querySelectorAll('input[name="files"]:checked');
+            if (checkboxes.length === 0) {
+                errorModal.show();
+                return false;
+            }
+            return true;
+        }
+
+        function toggleTemplateName() {
+            const templateNameField = document.querySelector('.template-name-field');
+            const saveTemplate = document.getElementById('save_template');
+            templateNameField.style.display = saveTemplate.checked ? 'block' : 'none';
+            document.getElementById('template_name').required = saveTemplate.checked;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    this.classList.toggle('collapsed');
+                });
+            });
+
+            // Show message modal if it exists
+            const messageModal = document.getElementById('messageModal');
+            if (messageModal) {
+                new bootstrap.Modal(messageModal).show();
+            }
+        });
+
+        async function previewFile(filename) {
+            try {
+                const response = await fetch(`/preview_file/${filename}`);
+                const data = await response.json();
+                if (data.status === 'success') {
+                    const textContent = document.getElementById('textContent');
+                    const dbfContent = document.getElementById('dbfContent');
+                    
+                    if (data.type === 'text') {
+                        textContent.style.display = 'block';
+                        dbfContent.style.display = 'none';
+                        textContent.querySelector('pre').textContent = data.content;
+                    } else if (data.type === 'dbf') {
+                        textContent.style.display = 'none';
+                        dbfContent.style.display = 'block';
+                        dbfContent.querySelector('.table-responsive').innerHTML = data.content;
+                    }
+                    
+                    previewModal.show();
+                } else {
+                    alert(data.message);
+                }
+            } catch (error) {
+                alert('Error loading file content');
+            }
+        }
+
+        function loadTemplate() {
+            const select = document.getElementById('template-select');
+            const templates = {{ templates|tojson }};
+            const selected = templates[select.value];
+            
+            if (selected) {
+                document.getElementById('recipient').value = selected.recipient;
+                document.getElementById('message').value = selected.message;
+                tinymce.get('message').setContent(selected.message);
+                fetch('/save_template_index?index=' + select.value);
+            } else {
+                document.getElementById('subject').value = '{{ default_subject }}';
+            }
+        }
+
+        function toggleAllFiles(checkbox) {
+            const allCheckboxes = document.querySelectorAll('input[name="files"]');
+            const folderCheckboxes = document.querySelectorAll('.folder-select');
+            allCheckboxes.forEach(cb => cb.checked = checkbox.checked);
+            folderCheckboxes.forEach(cb => cb.checked = checkbox.checked);
+        }
+
+        function toggleFolder(checkbox, folderId) {
+            const folderFiles = document.querySelectorAll(`#${folderId} input[name="files"]`);
+            folderFiles.forEach(cb => cb.checked = checkbox.checked);
+            updateSelectAllState();
+        }
+
+        function updateSelectAllState() {
+            const allFileCheckboxes = document.querySelectorAll('input[name="files"]');
+            const checkedFileCheckboxes = document.querySelectorAll('input[name="files"]:checked');
+            document.getElementById('selectAllFiles').checked = allFileCheckboxes.length === checkedFileCheckboxes.length;
+            
+            // Update folder select states
+            document.querySelectorAll('.folder-select').forEach(folderSelect => {
+                const folderId = folderSelect.getAttribute('onchange').match(/['"]([^'"]+)['"]/)[1];
+                const folderFiles = document.querySelectorAll(`#${folderId} input[name="files"]`);
+                const checkedFolderFiles = document.querySelectorAll(`#${folderId} input[name="files"]:checked`);
+                folderSelect.checked = folderFiles.length === checkedFolderFiles.length;
+            });
+        }
+
+        // Add event listeners to individual file checkboxes
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('input[name="files"]').forEach(checkbox => {
+                checkbox.addEventListener('change', updateSelectAllState);
+            });
+        });
+    </script>
+</body>
+</html>

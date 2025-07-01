@@ -1,0 +1,184 @@
+ ANEXA 2
+ Cabinet medical:CMI MF Dr. Mihalache Dorina             
+ Judet:Iasi                
+ Localiatate:Iasi                
+ Medic de familie:Mihalache Dorina              
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   355
+                 2.CNP:5250305700941
+  3.Nume si prenume:Cazacu Tudor Stefan           
+  4.SEX:M  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):05/03/2025
+  7.Greutate(g): 3600       8.Talie la naster(cm):   50
+  8.Varsta gestionala(saptamani):39
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/04/2025
+  11.Data iesirii din program(zz/ll/aaaa):04/03/2026
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1     b    4200    Mixt    2400  01/04/2025   2400  01/04/2025
+   2     b    4700    Mixt    2400  01/05/2025   2400  01/05/2025
+   3     b    5200    Mixt    2400  01/06/2025   2400  01/06/2025
+   4             0               0    /  /          0    /  /    
+   5             0               0    /  /          0    /  /    
+   6             0               0    /  /          0    /  /    
+   7             0               0    /  /          0    /  /    
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI MF Dr. Mihalache Dorina             
+ Judet:Iasi                
+ Localiatate:Iasi                
+ Medic de familie:Mihalache Dorina              
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   354
+                 2.CNP:6241112226840
+  3.Nume si prenume:Chilug Evelina Elena          
+  4.SEX:F  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):12/11/2024
+  7.Greutate(g): 2800       8.Talie la naster(cm):   50
+  8.Varsta gestionala(saptamani):38
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/04/2025
+  11.Data iesirii din program(zz/ll/aaaa):11/11/2025
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2             0               0    /  /          0    /  /    
+   3             0               0    /  /          0    /  /    
+   4             0               0    /  /          0    /  /    
+   5     b    5400    Mixt    1800  01/04/2025   1800  01/04/2025
+   6     b    5900    Mixt    1800  01/05/2025   1800  01/05/2025
+   7     b    6400    Mixt    1200  01/06/2025   1200  01/06/2025
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI MF Dr. Mihalache Dorina             
+ Judet:Iasi                
+ Localiatate:Iasi                
+ Medic de familie:Mihalache Dorina              
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   352
+                 2.CNP:5240716226728
+  3.Nume si prenume:Ciurdea Victor Andrei         
+  4.SEX:M  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):16/07/2024
+  7.Greutate(g): 3450       8.Talie la naster(cm):   50
+  8.Varsta gestionala(saptamani):39
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/10/2024
+  11.Data iesirii din program(zz/ll/aaaa):15/07/2025
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2             0               0    /  /          0    /  /    
+   3     b    5500    Mixt    2400  01/10/2024   2400  01/10/2024
+   4     b    6000    Mixt    1800  01/11/2024   1800  01/11/2024
+   5     b    6500    Mixt    1800  01/12/2024   1800  01/12/2024
+   6     b    7000    Mixt    1800  01/01/2025   1800  01/01/2025
+   7     b    7700    Mixt    1200  01/02/2025   1200  01/02/2025
+   8     b    8200    Mixt    1200  01/03/2025   1200  01/03/2025
+   9     b    8700    Mixt    1200  01/04/2025   1200  01/04/2025
+  10     b    9100    Mixt    1200  01/05/2025   1200  01/05/2025
+  11     b    9600    Mixt    1200  01/06/2025   1200  01/06/2025
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI MF Dr. Mihalache Dorina             
+ Judet:Iasi                
+ Localiatate:Iasi                
+ Medic de familie:Mihalache Dorina              
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   353
+                 2.CNP:6240807226851
+  3.Nume si prenume:Cobulianu Mayra-Teodora       
+  4.SEX:F  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):07/08/2024
+  7.Greutate(g): 3200       8.Talie la naster(cm):   49
+  8.Varsta gestionala(saptamani):39
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/10/2024
+  11.Data iesirii din program(zz/ll/aaaa):06/08/2025
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2     b    4300    Mixt    2400  01/10/2024   2400  01/10/2024
+   3     b    4800    Mixt    2400  01/11/2024   2400  01/11/2024
+   4     b    5300    Mixt    1800  01/12/2024   1800  01/12/2024
+   5     b    5800    Mixt    1800  01/01/2025   1800  01/01/2025
+   6     b    6300    Mixt    1800  01/02/2025   1800  01/02/2025
+   7     b    6800    Mixt    1200  01/03/2025   1200  01/03/2025
+   8     b    7200    Mixt    1200  01/04/2025   1200  01/04/2025
+   9     b    7700    Mixt    1200  01/05/2025   1200  01/05/2025
+  10     b    7100    Mixt    1200  01/06/2025   1200  01/06/2025
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+

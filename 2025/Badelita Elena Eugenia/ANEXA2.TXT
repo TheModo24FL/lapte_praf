@@ -1,0 +1,92 @@
+ ANEXA 2
+ Cabinet medical:CMI DR. BADELITA ELENA EUGENIA          
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:BADELITA ELENA EUGENIA        
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   510
+                 2.CNP:5250129701049
+  3.Nume si prenume:Colotila Akim Florin          
+  4.SEX:M  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):29/01/2025
+  7.Greutate(g): 3300       8.Talie la naster(cm):   54
+  8.Varsta gestionala(saptamani):38
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/04/2025
+  11.Data iesirii din program(zz/ll/aaaa):28/01/2026
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2             0               0    /  /          0    /  /    
+   3     b    5100    Mixt    2400  01/04/2025   2400  01/04/2025
+   4     b    5600    Mixt    1800  01/05/2025   1800  01/05/2025
+   5     b    6000    Mixt    1800  01/06/2025   1800  01/06/2025
+   6             0               0    /  /          0    /  /    
+   7             0               0    /  /          0    /  /    
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI DR. BADELITA ELENA EUGENIA          
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:BADELITA ELENA EUGENIA        
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   511
+                 2.CNP:6250109701955
+  3.Nume si prenume:Tabeica Irina                 
+  4.SEX:F  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):09/01/2025
+  7.Greutate(g): 2750       8.Talie la naster(cm):   48
+  8.Varsta gestionala(saptamani):37
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/04/2025
+  11.Data iesirii din program(zz/ll/aaaa):08/01/2026
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2             0               0    /  /          0    /  /    
+   3     b    4550    Mixt    2400  01/04/2025   2400  01/04/2025
+   4     b    5000    Mixt    1800  01/05/2025   1800  01/05/2025
+   5     b    5500    Mixt    1800  01/06/2025   1800  01/06/2025
+   6             0               0    /  /          0    /  /    
+   7             0               0    /  /          0    /  /    
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+

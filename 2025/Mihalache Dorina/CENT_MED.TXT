@@ -1,0 +1,35 @@
+
+
+      FORMULAR CENTRALIZATOR AL COPIILOR CERE BENEFICIAZA 
+      DE ACORDAREA DE LAPTE PRAF PENTRU LUNA  6 ANUL 2025
+
+ Cabinet medical:CMI MF Dr. Mihalache Dorina             
+ Judet:Iasi                
+ Localiatate:Iasi                
+ Medic de familie:Mihalache Dorina              
+
+  Criteriul: b
+--------------------------------------------------------------
+  Nr.     Nume prenume copil                CNP     Cantitate
+--------------------------------------------------------------
+  Grupa de varsta:  2-3 luni 
+     1  Cazacu Tudor Stefan             5250305700941   2400
+                                        --------------------
+                                        Total           2400
+  Grupa de varsta:  4-6 luni 
+     1  Chilug Evelina Elena            6241112226840   1200
+                                        --------------------
+                                        Total           1200
+  Grupa de varsta:  7-9 luni 
+     1  Cobulianu Mayra-Teodora         6240807226851   1200
+                                        --------------------
+                                        Total           1200
+  Grupa de varsta: 10-12 luni
+     1  Ciurdea Victor Andrei           5240716226728   1200
+                                        --------------------
+                                        Total           1200
+
+                              Total criteriu: b         6000
+
+   Semnatura si parafa medicului
+

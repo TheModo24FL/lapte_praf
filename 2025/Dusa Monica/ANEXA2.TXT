@@ -1,0 +1,276 @@
+ ANEXA 2
+ Cabinet medical:CMI DR. DUSA MONICA MF                  
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:DUSA MONICA                   
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   291
+                 2.CNP:5250223700669
+  3.Nume si prenume:Afrasinei Iancu PAul          
+  4.SEX:M  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):23/02/2025
+  7.Greutate(g): 3600       8.Talie la naster(cm):   53
+  8.Varsta gestionala(saptamani):36
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/04/2025
+  11.Data iesirii din program(zz/ll/aaaa):22/02/2026
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2     b    4500    Mixt    2400  01/04/2025   2400  01/04/2025
+   3     b    4900    Mixt    2400  01/05/2025   2400  01/05/2025
+   4     b    5400    Mixt    1800  01/06/2025   1800  01/06/2025
+   5             0               0    /  /          0    /  /    
+   6             0               0    /  /          0    /  /    
+   7             0               0    /  /          0    /  /    
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI DR. DUSA MONICA MF                  
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:DUSA MONICA                   
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   301
+                 2.CNP:5250401700741
+  3.Nume si prenume:Gradinaru Eduard George       
+  4.SEX:M  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):01/04/2025
+  7.Greutate(g): 3460       8.Talie la naster(cm):   52
+  8.Varsta gestionala(saptamani):38
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/05/2025
+  11.Data iesirii din program(zz/ll/aaaa):31/03/2026
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2     b    4200    Mixt    2400  01/05/2025   2400  01/05/2025
+   3     b    4700    Mixt    2400  01/06/2025   2400  01/06/2025
+   4             0               0    /  /          0    /  /    
+   5             0               0    /  /          0    /  /    
+   6             0               0    /  /          0    /  /    
+   7             0               0    /  /          0    /  /    
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI DR. DUSA MONICA MF                  
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:DUSA MONICA                   
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   290
+                 2.CNP:5250313701060
+  3.Nume si prenume:Kaddar Adam Yassin            
+  4.SEX:M  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):13/03/2025
+  7.Greutate(g): 3380       8.Talie la naster(cm):   53
+  8.Varsta gestionala(saptamani):38
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/04/2025
+  11.Data iesirii din program(zz/ll/aaaa):12/03/2026
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1     b    3800    Mixt    2400  01/04/2025   2400  01/04/2025
+   2     b    4300    Mixt    2400  01/05/2025   2400  01/05/2025
+   3     b    4800    Mixt    2400  01/06/2025   2400  01/06/2025
+   4             0               0    /  /          0    /  /    
+   5             0               0    /  /          0    /  /    
+   6             0               0    /  /          0    /  /    
+   7             0               0    /  /          0    /  /    
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI DR. DUSA MONICA MF                  
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:DUSA MONICA                   
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   303
+                 2.CNP:6250401700776
+  3.Nume si prenume:Miturca Melissa Ioana         
+  4.SEX:F  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):01/04/2025
+  7.Greutate(g): 3600       8.Talie la naster(cm):   52
+  8.Varsta gestionala(saptamani):38
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/05/2025
+  11.Data iesirii din program(zz/ll/aaaa):31/03/2026
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2     b    4100    Mixt    2400  01/05/2025   2400  01/05/2025
+   3     b    4600    Mixt    2400  01/06/2025   2400  01/06/2025
+   4             0               0    /  /          0    /  /    
+   5             0               0    /  /          0    /  /    
+   6             0               0    /  /          0    /  /    
+   7             0               0    /  /          0    /  /    
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI DR. DUSA MONICA MF                  
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:DUSA MONICA                   
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   286
+                 2.CNP:6240731226700
+  3.Nume si prenume:Nita Sofia Maria              
+  4.SEX:F  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):31/07/2024
+  7.Greutate(g): 3030       8.Talie la naster(cm):   49
+  8.Varsta gestionala(saptamani):38
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/09/2024
+  11.Data iesirii din program(zz/ll/aaaa):30/07/2025
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1             0               0    /  /          0    /  /    
+   2     b    3700    Mixt    2400  01/09/2024   2400  01/09/2024
+   3     b    4200    Mixt    2400  01/10/2024   2400  01/10/2024
+   4     b    4700    Mixt    1800  01/11/2024   1800  01/11/2024
+   5     b    5200    Mixt    1800  01/12/2024   1800  01/12/2024
+   6     b    5700    Mixt    1800  01/01/2025   1800  01/01/2025
+   7     b    6200    Mixt    1200  01/02/2025   1200  01/02/2025
+   8     b    6700    Mixt    1200  01/03/2025   1200  01/03/2025
+   9     b    7200    Mixt    1200  01/04/2025   1200  01/04/2025
+  10     b    7600    Mixt    1200  01/05/2025   1200  01/05/2025
+  11     b    8000    Mixt    1200  01/06/2025   1200  01/06/2025
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
+ ANEXA 2
+ Cabinet medical:CMI DR. DUSA MONICA MF                  
+ Judet:IASI                
+ Localiatate:TOMESTI             
+ Medic de familie:DUSA MONICA                   
+
+    FISA COPILULUI CU VARSTA CUPRINSA INTRE 0 SI 12 LUNI
+            CARE BENEFICIAZA DE LAPTE PRAF
+     IN CONFORMITATE CU PREVEDERILE LEGII NR.321/2001
+                 1.Nr.fisa de consultatie:   300
+                 2.CNP:6250411701378
+  3.Nume si prenume:Petrache Catalin Constantin   
+  4.SEX:F  5.Domiciliu:R
+  DATE PRIVIND NASTEREA COPILULUI:
+  6.Data nasterii(zz/ll/aaaa):11/04/2025
+  7.Greutate(g): 2550       8.Talie la naster(cm):   46
+  8.Varsta gestionala(saptamani):38
+
+  DATE PRIVIND ACORDAREA LAPTELUI PRAF:
+  10.Data intrarii in program(zz/ll/aaaa):01/05/2025
+  11.Data iesirii din program(zz/ll/aaaa):10/04/2026
+       12.Criteriu de selectie = a/b/c/d
+       13.Greutate copil la data prescrierii
+       14.Alimentatie = mixt/artificial
+       15.Cantitate de lapte praf prescrisa
+       16.Data prescrierii retetei
+       17.Cantitate de lapte praf eliberata
+       18.Data eliberarii
+
+ Luna  [12]   [13]    [14]    [15]     [16]      [17]     [18]
+   1     b    3300    Mixt    2400  01/05/2025   2400  01/05/2025
+   2     b    3800    Mixt    2400  01/06/2025   2400  01/06/2025
+   3             0               0    /  /          0    /  /    
+   4             0               0    /  /          0    /  /    
+   5             0               0    /  /          0    /  /    
+   6             0               0    /  /          0    /  /    
+   7             0               0    /  /          0    /  /    
+   8             0               0    /  /          0    /  /    
+   9             0               0    /  /          0    /  /    
+  10             0               0    /  /          0    /  /    
+  11             0               0    /  /          0    /  /    
+  12             0               0    /  /          0    /  /    
+
+
+   Stampila cabinet               Semnatura si parafa medic
+
