@@ -14,15 +14,16 @@ from datetime import datetime
 import locale
 from dbfread import DBF
 import pandas as pd
+import email.utils
 
 load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-UPLOAD_FOLDER = '/home/pi/dos/2025'
-TEMPLATES_FILE = '/home/pi/dos/email_templates.json'
-LAST_TEMPLATE_FILE = '/home/pi/dos/last_template.txt'
+UPLOAD_FOLDER = os.getenv('UPLOAD_FOLDER')
+TEMPLATES_FILE = os.getenv('TEMPLATES_FILE')
+LAST_TEMPLATE_FILE = os.getenv('LAST_TEMPLATE_FILE')
 
 def get_file_info(filepath):
     timestamp = os.path.getmtime(filepath)
@@ -182,8 +183,14 @@ SENDER_EMAIL={request.form['sender_email']}
 SENDER_NAME={request.form['sender_name']}
 USE_ZIP={use_zip}
 BCC_ENABLED={bcc_enabled}
-SUBJECT_FORMAT={request.form['subject_format']}"""
-        with open('/home/pi/dos/.env', 'w') as f:
+SUBJECT_FORMAT={request.form['subject_format']}
+APP_ROOT={os.getenv('APP_ROOT')}
+UPLOAD_FOLDER={os.getenv('UPLOAD_FOLDER')}
+TEMPLATES_FILE={os.getenv('TEMPLATES_FILE')}
+LAST_TEMPLATE_FILE={os.getenv('LAST_TEMPLATE_FILE')}"""
+        
+        env_path = os.path.join(os.getenv('APP_ROOT', '/'), '.env')
+        with open(env_path, 'w') as f:
             f.write(env_content)
         load_dotenv(override=True)
         return jsonify({'status': 'success'})
@@ -210,23 +217,23 @@ def send_email():
         print(f"SMTP Settings: {os.getenv('SMTP_SERVER')}:{os.getenv('SMTP_PORT')}")
         print(f"Selected files: {selected_files}")
         
-        msg = MIMEMultipart('alternative')
+        msg = MIMEMultipart('mixed')
         sender_name = os.getenv('SENDER_NAME')
         sender_email = os.getenv('SENDER_EMAIL')
-        if sender_name:
-            msg['From'] = f"{sender_name} <{sender_email}>"
-        else:
-            msg['From'] = sender_email
         
+        # Set proper From header with required email address but display only name
+        msg['From'] = email.utils.formataddr((sender_name, sender_email))
         msg['To'] = recipient
         msg['Subject'] = subject
+
+        # Add Reply-To header
+        msg['Reply-To'] = sender_email
         
         # Add BCC if enabled
         if os.getenv('BCC_ENABLED', 'false').lower() == 'true':
-            msg['Bcc'] = os.getenv('SENDER_EMAIL')
+            msg['Bcc'] = sender_email
         
-        # Add both plain text and HTML versions
-        msg.attach(MIMEText(message.replace('<br>', '\n').replace('</div><div>', '\n').replace('<div>', '').replace('</div>', ''), 'plain'))
+        # Add both plain text and HTML versions        
         msg.attach(MIMEText(message, 'html'))
         
         # Group files by folder
