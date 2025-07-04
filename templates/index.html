@@ -440,7 +440,7 @@
         function showTerminal(port, name) {
             if (window.terminalModal) {
                 // Update iframe source
-                document.getElementById('terminalFrame').src = `http://49.13.76.7:${port}/`;
+                document.getElementById('terminalFrame').src = `https://${port}.modo24.ro/`;
                 // Update modal title
                 document.querySelector('#terminalModal .modal-title').textContent = `Terminal - ${name}`;
                 window.terminalModal.show();
