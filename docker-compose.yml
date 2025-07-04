@@ -8,6 +8,11 @@ services:
     volumes:
       - .:/app
       - ./2025:/app/2025
+      - /home/dos/2025:/app/prod_2025
+      - ./email_templates.json:/app/email_templates.json
+      - ./.env:/app/.env
+      - ./last_template.txt:/app/last_template.txt
     environment:
       - TZ=Europe/Bucharest
+      - UPLOAD_FOLDER=/app/prod_2025
     restart: unless-stopped
