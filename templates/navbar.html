@@ -44,7 +44,7 @@ function showTerminal(port, name) {
     if (window.terminalModal) {
         const frame = document.getElementById('terminalFrame');
         if (frame.getAttribute('data-loaded') !== 'true') {
-            frame.src = `http://49.13.76.7:${port}/`;
+            frame.src = `https://${port}.modo24.ro`;
             frame.setAttribute('data-loaded', 'true');
         }
         document.querySelector('#terminalModal .modal-title').textContent = `Terminal - ${name}`;
