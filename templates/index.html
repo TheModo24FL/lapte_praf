@@ -38,6 +38,27 @@
         <form action="/send_email" method="post" id="emailForm" onsubmit="return validateForm()">
             <div class="row">
                 <div class="col-md-6">
+                    <!-- DOS Servers Card -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0"><i class="bi bi-pc-display"></i> Servere DOS</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-outline-primary" onclick="showTerminal('6080', 'Mihalache Dorina')">
+                                    <i class="bi bi-terminal"></i> Mihalache Dorina
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" onclick="showTerminal('6081', 'Dusa Monica')">
+                                    <i class="bi bi-terminal"></i> Dusa Monica
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" onclick="showTerminal('6082', 'Badelita Elena Eugenia')">
+                                    <i class="bi bi-terminal"></i> Badelita Elena Eugenia
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Select Files Card -->
                     <div class="card">
                         <div class="card-header bg-primary text-white">
                             <h5 class="card-title mb-0 d-flex justify-content-between align-items-center">
@@ -135,6 +156,7 @@
                 </div>
 
                 <div class="col-md-6">
+                    <!-- Email Details Card -->
                     <div class="card">
                         <div class="card-header bg-primary text-white">
                             <h5 class="card-title mb-0"><i class="bi bi-envelope"></i> Email Details</h5>
@@ -414,6 +436,22 @@
                 checkbox.addEventListener('change', updateSelectAllState);
             });
         });
+
+        function showTerminal(port, name) {
+            if (window.terminalModal) {
+                // Update iframe source
+                document.getElementById('terminalFrame').src = `http://49.13.76.7:${port}/`;
+                // Update modal title
+                document.querySelector('#terminalModal .modal-title').textContent = `Terminal - ${name}`;
+                window.terminalModal.show();
+                // Set initial zoom after modal is shown
+                setTimeout(() => {
+                    currentZoom = 1;
+                    const frame = document.getElementById('terminalFrame');
+                    frame.style.transform = `scale(${currentZoom})`;
+                }, 300);
+            }
+        }
     </script>
 </body>
 </html>

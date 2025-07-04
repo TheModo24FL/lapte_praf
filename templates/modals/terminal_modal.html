@@ -1,0 +1,26 @@
+<div class="modal fade" id="terminalModal" tabindex="-1">
+    <div class="modal-dialog modal-lg" style="margin: 0; position: fixed;">
+        <div class="modal-content" style="cursor: move;">
+            <div class="modal-header grab-handle">
+                <h5 class="modal-title">Terminal</h5>
+                <div class="zoom-controls ms-3">
+                    <button class="btn btn-sm btn-outline-primary" onclick="adjustZoom(0.1)">
+                        <i class="bi bi-zoom-in"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-primary" onclick="adjustZoom(-0.1)">
+                        <i class="bi bi-zoom-out"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-primary" onclick="resetZoom()">
+                        <i class="bi bi-arrows-angle-contract"></i> Reset
+                    </button>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-0 d-flex justify-content-center">
+                <div style="width: 900px; height: 620px; overflow: hidden;">
+                    <iframe id="terminalFrame" data-loaded="false" style="width: 100%; height: 100%; border: none; transform-origin: 0 0;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

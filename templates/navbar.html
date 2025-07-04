@@ -14,3 +14,81 @@
         </div>
     </div>
 </nav>
+
+<!-- Include modals -->
+{% include 'modals/terminal_modal.html' %}
+{% include 'modals/vnc_modal.html' %}
+{% include 'modals/files_modal.html' %}
+
+<!-- Add jQuery and jQuery UI -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize all modals
+    window.terminalModal = new bootstrap.Modal(document.getElementById('terminalModal'));
+    window.vncModal = new bootstrap.Modal(document.getElementById('vncModal'));
+    window.filesModal = new bootstrap.Modal(document.getElementById('filesModal'));
+    
+    // Make modals draggable
+    $('.modal-content').draggable({
+        handle: '.modal-header',
+        containment: 'window'
+    });
+});
+
+// Terminal functions
+function showTerminal(port, name) {
+    if (window.terminalModal) {
+        const frame = document.getElementById('terminalFrame');
+        if (frame.getAttribute('data-loaded') !== 'true') {
+            frame.src = `http://49.13.76.7:${port}/`;
+            frame.setAttribute('data-loaded', 'true');
+        }
+        document.querySelector('#terminalModal .modal-title').textContent = `Terminal - ${name}`;
+        window.terminalModal.show();
+        setTimeout(() => {
+            currentZoom = 1.0;
+            frame.style.transform = `scale(${currentZoom})`;
+        }, 300);
+    }
+}
+
+// VNC and Files functions
+function showVNC() {
+    if (window.vncModal) {
+        window.vncModal.show();
+    }
+}
+
+function showFiles() {
+    if (window.filesModal) {
+        window.filesModal.show();
+    }
+}
+
+let currentZoom = 1.0;  // Changed default zoom
+
+function adjustZoom(delta) {
+    currentZoom = Math.max(0.5, Math.min(2, currentZoom + delta));
+    const frame = document.getElementById('terminalFrame');
+    frame.style.transform = `scale(${currentZoom})`;
+}
+
+function resetZoom() {
+    currentZoom = 1.0;  // Reset to our preferred zoom
+    const frame = document.getElementById('terminalFrame');
+    frame.style.transform = `scale(${currentZoom})`;
+}
+
+// Reset zoom and loaded state when modal is closed
+document.getElementById('terminalModal').addEventListener('hidden.bs.modal', function () {
+    const frame = document.getElementById('terminalFrame');
+    frame.setAttribute('data-loaded', 'false');
+    frame.src = '';  // Clear source
+    currentZoom = 1.0;
+    frame.style.transform = `scale(${currentZoom})`;
+});
+</script>
