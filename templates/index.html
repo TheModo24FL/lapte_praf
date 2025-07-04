@@ -201,7 +201,7 @@
         </form>
     </div>
 
-    <!-- Add this after the form -->
+    <!-- Error Modal -->
     <div class="modal fade" id="errorModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -268,49 +268,8 @@
         {% endif %}
     {% endwith %}
 
-    <!-- Add these modals before the closing body tag -->
-    <div class="modal fade" id="vncModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Server VNC</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body p-0">
-                    <iframe src="https://lapte.modo24.ro/vnc.html" style="width:100%; height:100%; border:none;"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="filesModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Browser Fișiere</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body p-0">
-                    <iframe src="https://files.modo24.ro/files/" style="width:100%; height:100%; border:none;"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Add these functions at the beginning of your script section
-        const vncModal = new bootstrap.Modal(document.getElementById('vncModal'));
-        const filesModal = new bootstrap.Modal(document.getElementById('filesModal'));
-
-        function showVNC() {
-            vncModal.show();
-        }
-
-        function showFiles() {
-            filesModal.show();
-        }
-
         // Initialize TinyMCE with a callback for when it's ready
         tinymce.init({
             selector: '#message',

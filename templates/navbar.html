@@ -2,12 +2,6 @@
     <div class="container">
         <a class="navbar-brand" href="/"><i class="bi bi-clipboard-data"></i> Raportare lapte praf</a>
         <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#" onclick="showVNC()">
-                <i class="bi bi-display"></i> Server VNC
-            </a>
-            <a class="nav-link" href="#" onclick="showFiles()">
-                <i class="bi bi-folder2-open"></i> Browser Fișiere
-            </a>
             <a class="nav-link" href="/settings">
                 <i class="bi bi-gear"></i> Settings
             </a>
@@ -17,8 +11,6 @@
 
 <!-- Include modals -->
 {% include 'modals/terminal_modal.html' %}
-{% include 'modals/vnc_modal.html' %}
-{% include 'modals/files_modal.html' %}
 
 <!-- Add jQuery and jQuery UI -->
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -27,12 +19,10 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all modals
+    // Initialize terminal modal
     window.terminalModal = new bootstrap.Modal(document.getElementById('terminalModal'));
-    window.vncModal = new bootstrap.Modal(document.getElementById('vncModal'));
-    window.filesModal = new bootstrap.Modal(document.getElementById('filesModal'));
     
-    // Make modals draggable
+    // Make modal draggable
     $('.modal-content').draggable({
         handle: '.modal-header',
         containment: 'window'
@@ -53,19 +43,6 @@ function showTerminal(port, name) {
             currentZoom = 1.0;
             frame.style.transform = `scale(${currentZoom})`;
         }, 300);
-    }
-}
-
-// VNC and Files functions
-function showVNC() {
-    if (window.vncModal) {
-        window.vncModal.show();
-    }
-}
-
-function showFiles() {
-    if (window.filesModal) {
-        window.filesModal.show();
     }
 }
 
